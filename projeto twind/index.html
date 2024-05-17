@@ -25,19 +25,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
-<script>function converter() {
-    const inputValorReal = document.getElementById("valorEmReais");
-    const resultadoElement = document.getElementById("resultado");
-
-    const valorEmReais = parseFloat(inputValorReal.value);
-    const taxaDeConversao = 5; // Exemplo de taxa fixa de 5
-    const valorEmDolares = valorEmReais / taxaDeConversao;
-
-    resultadoElement.textContent = `O valor em dólar é ${valorEmDolares.toFixed(2)}`;
-}</script>
-
-
-
+    <script>function converter() {
+        const inputValorReal = document.getElementById("valorEmReais");
+        const resultadoElement = document.getElementById("resultado");
+    
+        const valorEmReais = parseFloat(inputValorReal.value);
+        const taxaDeConversao = 5;
+        const valorEmDolares = valorEmReais / taxaDeConversao;
+    
+        resultadoElement.textContent = `O valor em dólar é ${valorEmDolares.toFixed(2)}`;
+    }</script>
 </body>
 </html>
