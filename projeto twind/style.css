@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.fundo-1{background-color: rgb(188, 196, 203);}
+
+
+.conteudo {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px; /* Defina a largura máxima para garantir que não fique muito grande em telas grandes */
+    margin-top: 50px; /* Adicione margem superior para afastar do navbar */
+}
+
+.conteudo input, .conteudo button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%; /* Defina a largura dos elementos de entrada e botão como 100% */
+    box-sizing: border-box; /* Inclua a largura do padding na largura total */
+}
+
+#valorEmReais {
+    padding: 10px;
+}
+
+.navbar-brand img {
+    max-width: 100px; /* Defina a largura máxima desejada */
+    max-height: 50px; /* Defina a altura máxima desejada */
+}
+
+@media screen and (max-width: 750px) {
+    .conteudo {
+        width: 90%; /* Ajuste a largura para telas menores */
+    }
+}
+
+#resultado {
+    color: #fff;
+}
